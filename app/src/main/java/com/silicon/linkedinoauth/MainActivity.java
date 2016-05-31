@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     //This is the private api key of our application
     private static final String SECRET_KEY = "L64X5ryychhmd60l";
     //This is any string we want to use. This will be used for avoid CSRF attacks. You can generate one here: http://strongpasswordgenerator.com/
-    private static final String STATE = "5E<@b|7\"_h|3 )H\n";
+    private static final String STATE = "E3ZYKC1T6H2yP4z";
     //This is the url that LinkedIn Auth process will redirect to. We can put whatever we want that starts with http:// or https:// .
 //We use a made up url that we will intercept when redirecting. Avoid Uppercases.
     private static final String REDIRECT_URI = "http://localhost:54307/signin-linkedin";

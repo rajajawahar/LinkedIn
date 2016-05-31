@@ -20,7 +20,8 @@ import java.io.IOException;
 
 public class HomeActivity extends AppCompatActivity {
 
-    private static final String PROFILE_URL = "https://api.linkedin.com/v1/people/~";
+    private static final String PROFILE_URL = "https://api.linkedin.com/v1/people/~:(id,num-connections,picture-url)";
+    //    private static final String PROFILE_URL = "https://api.linkedin.com/v1/people/~/connections?modified=new";
     private static final String OAUTH_ACCESS_TOKEN_PARAM = "oauth2_access_token";
     private static final String QUESTION_MARK = "?";
     private static final String EQUALS = "=";
@@ -60,6 +61,7 @@ public class HomeActivity extends AppCompatActivity {
         @Override
         protected JSONObject doInBackground(String... urls) {
             if (urls.length > 0) {
+                Log.e("URL", urls[0]);
                 String url = urls[0];
                 HttpClient httpClient = new DefaultHttpClient();
                 HttpGet httpget = new HttpGet(url);
