@@ -20,7 +20,9 @@ import java.io.IOException;
 
 public class HomeActivity extends AppCompatActivity {
 
-    private static final String PROFILE_URL = "https://api.linkedin.com/v1/people/~:(id,num-connections,picture-url)";
+
+//For Getting EmailID and No of Connection
+    private static final String PROFILE_URL = "https://api.linkedin.com/v1/people/~:(id,email-address,num-connections,picture-url)";
     //    private static final String PROFILE_URL = "https://api.linkedin.com/v1/people/~/connections?modified=new";
     private static final String OAUTH_ACCESS_TOKEN_PARAM = "oauth2_access_token";
     private static final String QUESTION_MARK = "?";
